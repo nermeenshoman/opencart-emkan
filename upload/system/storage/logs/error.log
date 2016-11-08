@@ -1,0 +1,37 @@
+2016-11-07 12:40:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart-emkan\upload\system\engine\loader.php on line 53
+2016-11-07 12:41:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart-emkan\upload\system\engine\loader.php on line 53
+2016-11-07 12:46:24 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart-emkan\upload\system\engine\loader.php on line 53
+2016-11-07 13:19:27 - PHP Notice:  Undefined index: SAR in C:\xampp\htdocs\opencart-emkan\upload\system\library\cart\currency.php on line 25
+2016-11-07 13:19:27 - PHP Notice:  Undefined index: SAR in C:\xampp\htdocs\opencart-emkan\upload\system\library\cart\currency.php on line 26
+2016-11-07 13:19:28 - PHP Notice:  Undefined index: SAR in C:\xampp\htdocs\opencart-emkan\upload\system\library\cart\currency.php on line 27
+2016-11-07 13:19:28 - PHP Notice:  Undefined index: SAR in C:\xampp\htdocs\opencart-emkan\upload\system\library\cart\currency.php on line 30
+2016-11-07 16:28:20 - PHP Notice:  Undefined index: code in C:\xampp\htdocs\opencart-emkan\upload\catalog\controller\checkout\shipping_method.php on line 15
+2016-11-07 16:28:20 - PHP Notice:  Undefined index: code in C:\xampp\htdocs\opencart-emkan\upload\catalog\controller\checkout\shipping_method.php on line 15
+2016-11-07 16:42:16 - PHP Notice:  Undefined index: tst_xlogistics in C:\xampp\htdocs\opencart-emkan\upload\catalog\controller\checkout\shipping_method.php on line 120
+2016-11-07 16:48:24 - PHP Notice:  Undefined index: tst_xlogistics in C:\xampp\htdocs\opencart-emkan\upload\catalog\controller\checkout\shipping_method.php on line 120
+2016-11-07 17:00:07 - PHP Notice:  Undefined index: shipping_method in C:\xampp\htdocs\opencart-emkan\upload\catalog\controller\checkout\payment_method.php on line 5
+2016-11-07 20:46:47 - PHP Notice:  Indirect modification of overloaded property ControllerCheckoutRegister::$error has no effect in C:\xampp\htdocs\opencart-emkan\upload\catalog\controller\checkout\register.php on line 161
+2016-11-07 20:47:41 - PHP Notice:  Indirect modification of overloaded property ControllerCheckoutRegister::$error has no effect in C:\xampp\htdocs\opencart-emkan\upload\catalog\controller\checkout\register.php on line 161
+2016-11-08 10:42:12 - PHP Notice:  Undefined variable: error_saudi_telephone in C:\xampp\htdocs\opencart-emkan\upload\catalog\view\theme\default\template\account\register.tpl on line 77
+2016-11-08 10:43:27 - PHP Notice:  Undefined variable: error_saudi_telephone in C:\xampp\htdocs\opencart-emkan\upload\catalog\view\theme\default\template\account\register.tpl on line 79
+2016-11-08 19:17:22 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:17:22 - PHP Notice:  Undefined variable: entry_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:17:22 - PHP Notice:  Undefined variable: entry_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 37
+2016-11-08 19:18:21 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:18:21 - PHP Notice:  Undefined variable: entry_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:18:21 - PHP Notice:  Undefined variable: entry_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 37
+2016-11-08 19:19:05 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:19:31 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:42:00 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:42:05 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:42:12 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:42:19 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:42:47 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:48:16 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:49:34 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-08 19:50:11 - PHP Notice:  Undefined index: sort_order in C:\xampp\htdocs\opencart-emkan\upload\catalog\controller\checkout\payment_method.php on line 70
+2016-11-08 19:50:11 - PHP Notice:  Undefined index: code in C:\xampp\htdocs\opencart-emkan\upload\catalog\view\theme\default\template\checkout\payment_method.tpl on line 9
+2016-11-08 19:50:11 - PHP Notice:  Undefined index: code in C:\xampp\htdocs\opencart-emkan\upload\catalog\view\theme\default\template\checkout\payment_method.tpl on line 13
+2016-11-08 19:50:11 - PHP Notice:  Undefined index: title in C:\xampp\htdocs\opencart-emkan\upload\catalog\view\theme\default\template\checkout\payment_method.tpl on line 15
+2016-11-08 19:50:11 - PHP Notice:  Undefined index: terms in C:\xampp\htdocs\opencart-emkan\upload\catalog\view\theme\default\template\checkout\payment_method.tpl on line 16
+2016-11-08 19:56:49 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
