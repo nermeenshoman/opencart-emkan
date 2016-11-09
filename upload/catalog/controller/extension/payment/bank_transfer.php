@@ -26,7 +26,11 @@ class ControllerExtensionPaymentBankTransfer extends Controller {
 			$comment  = $this->language->get('text_instruction') . "\n\n";
 			$comment .= $this->config->get('bank_transfer_bank' . $this->config->get('config_language_id')) . "\n\n";
 			$comment .= $this->language->get('text_payment');
-
+                        
+                        // Added by Nermeen Shoman
+                        $this->registry->set('tstBankTransferMail', new Tst_bank_transfer_mail($this->registry));
+                        $this->tstBankTransferMail->sendMail($this);
+                        // End Nermeen Shoman
 			$this->model_checkout_order->addOrderHistory($this->session->data['order_id'], $this->config->get('bank_transfer_order_status_id'), $comment, true);
 		}
 	}
