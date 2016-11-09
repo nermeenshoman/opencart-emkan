@@ -2,7 +2,7 @@
 <p><b><?php echo $text_description; ?></b></p>
 <div class="well well-sm">
   <p><?php echo $bank; ?></p>
-  <p><?php echo $text_payment; ?></p>
+  <p><!-- //Addded by Nermeen Shoman--><font color="red"><?php echo $text_payment; ?></font><!-- //End by Nermeen Shoman--></p>
 </div>
 <div class="buttons">
   <div class="pull-right">

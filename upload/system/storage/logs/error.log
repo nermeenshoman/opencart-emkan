@@ -35,3 +35,6 @@
 2016-11-08 19:50:11 - PHP Notice:  Undefined index: title in C:\xampp\htdocs\opencart-emkan\upload\catalog\view\theme\default\template\checkout\payment_method.tpl on line 15
 2016-11-08 19:50:11 - PHP Notice:  Undefined index: terms in C:\xampp\htdocs\opencart-emkan\upload\catalog\view\theme\default\template\checkout\payment_method.tpl on line 16
 2016-11-08 19:56:49 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-09 8:51:23 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart-emkan\upload\system\library\mail.php on line 158
+2016-11-09 8:51:24 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart-emkan\upload\system\library\mail.php on line 158
+2016-11-09 8:51:24 - PHP Notice:  Undefined variable: points in C:\xampp\htdocs\opencart-emkan\upload\catalog\controller\extension\payment\bank_transfer.php on line 41
