@@ -38,3 +38,7 @@
 2016-11-09 8:51:23 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart-emkan\upload\system\library\mail.php on line 158
 2016-11-09 8:51:24 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart-emkan\upload\system\library\mail.php on line 158
 2016-11-09 8:51:24 - PHP Notice:  Undefined variable: points in C:\xampp\htdocs\opencart-emkan\upload\catalog\controller\extension\payment\bank_transfer.php on line 41
+2016-11-09 10:52:41 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart-emkan\upload\system\engine\loader.php on line 53
+2016-11-09 10:53:29 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart-emkan\upload\system\engine\loader.php on line 53
+2016-11-09 10:54:07 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart-emkan\upload\system\engine\loader.php on line 53
+2016-11-09 10:56:53 - PHP Notice:  Undefined index: tst_codfee in C:\xampp\htdocs\opencart-emkan\upload\catalog\model\extension\total\tst_xlogistics.php on line 9

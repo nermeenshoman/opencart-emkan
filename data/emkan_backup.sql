@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2016 at 09:47 PM
+-- Generation Time: Nov 09, 2016 at 11:47 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -358,8 +358,7 @@ CREATE TABLE `oc_cart` (
 --
 
 INSERT INTO `oc_cart` (`cart_id`, `api_id`, `customer_id`, `session_id`, `product_id`, `recurring_id`, `option`, `quantity`, `date_added`) VALUES
-(19, 0, 0, 'api2ncqljvn24h530dq3c3g6r7', 33, 0, '[]', 1, '2016-11-08 21:13:40'),
-(20, 0, 0, '1smvjma417lvqfqqrn21bm12f5', 33, 0, '[]', 1, '2016-11-08 22:12:21');
+(24, 0, 0, '1smvjma417lvqfqqrn21bm12f5', 33, 0, '[]', 1, '2016-11-09 12:25:03');
 
 -- --------------------------------------------------------
 
@@ -1385,7 +1384,8 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (28, 'dashboard', 'chart'),
 (35, 'payment', 'bank_transfer'),
 (38, 'shipping', 'tst_xlogistics'),
-(40, 'payment', 'tst_codfee');
+(40, 'payment', 'tst_codfee'),
+(42, 'total', 'tst_codfee');
 
 -- --------------------------------------------------------
 
@@ -2075,7 +2075,40 @@ INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, 
 (13, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'NERMEEN', 'SHOMAN', 'nermeenshoman@gmail.com', '009665414743205', 'dnsdasdfjasdf', '[]', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Flat Shipping Rate', 'flat.flat', '', '405.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-08 13:17:21', '2016-11-08 13:17:21'),
 (14, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'NERMEEN', 'SHOMAN', 'nermeenshoman@gmail.com', '009665414743205', 'dnsdasdfjasdf', '[]', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery', 'cod', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '213.3300', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-08 20:49:09', '2016-11-08 20:49:09'),
 (15, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'NERMEEN', 'SHOMAN', 'nermeenshoman@gmail.com', '009665414743205', 'dnsdasdfjasdf', '[]', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Flat Shipping Rate', 'flat.flat', '', '205.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-08 20:53:20', '2016-11-08 20:53:20'),
-(16, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'NERMEEN', 'SHOMAN', 'nermeenshoman@gmail.com', '009665414743205', 'dnsdasdfjasdf', '[]', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Al Bahah', 2874, '', '[]', 'Bank Transfer', 'bank_transfer', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '213.3300', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-08 20:55:51', '2016-11-08 20:55:51');
+(16, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'NERMEEN', 'SHOMAN', 'nermeenshoman@gmail.com', '009665414743205', 'dnsdasdfjasdf', '[]', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Al Bahah', 2874, '', '[]', 'Bank Transfer', 'bank_transfer', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '213.3300', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-08 20:55:51', '2016-11-08 20:55:51'),
+(17, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'NERMEEN', 'SHOMAN', 'nermeenshoman@gmail.com', '009665414743205', 'dnsdasdfjasdf', '[]', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '213.3300', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 08:39:53', '2016-11-09 08:39:53'),
+(18, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'NERMEEN', 'SHOMAN', 'nermeenshoman@gmail.com', '009665414743205', 'dnsdasdfjasdf', '[]', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '213.3300', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 08:40:00', '2016-11-09 08:40:00'),
+(19, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'NERMEEN', 'SHOMAN', 'nermeenshoman@gmail.com', '009665414743205', 'dnsdasdfjasdf', '[]', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '213.3300', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 08:51:23', '2016-11-09 08:51:23'),
+(20, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'NERMEEN', 'SHOMAN', 'nermeenshoman@gmail.com', '009665414743205', 'dnsdasdfjasdf', '[]', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '213.3300', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 08:56:52', '2016-11-09 08:56:52'),
+(21, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'NERMEEN', 'SHOMAN', 'nermeenshoman@gmail.com', '009665414743205', 'dnsdasdfjasdf', '[]', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'NERMEEN', 'SHOMAN', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 7, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 09:51:18', '2016-11-09 09:51:22'),
+(22, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 11:25:36', '2016-11-09 11:25:36'),
+(23, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 11:28:29', '2016-11-09 11:28:29'),
+(24, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 11:43:59', '2016-11-09 11:43:59'),
+(25, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 11:57:26', '2016-11-09 11:57:26'),
+(26, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:04:52', '2016-11-09 12:04:52'),
+(27, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:05:30', '2016-11-09 12:05:30'),
+(28, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:07:42', '2016-11-09 12:07:42'),
+(29, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:08:05', '2016-11-09 12:08:05'),
+(30, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:10:09', '2016-11-09 12:10:09'),
+(31, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:13:17', '2016-11-09 12:13:17'),
+(32, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Flat Shipping Rate', 'flat.flat', '', '205.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:17:45', '2016-11-09 12:17:45'),
+(33, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:18:14', '2016-11-09 12:18:14'),
+(34, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Flat Shipping Rate', 'flat.flat', '', '205.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:18:33', '2016-11-09 12:18:33'),
+(35, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Flat Shipping Rate', 'flat.flat', '', '205.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:20:37', '2016-11-09 12:20:37'),
+(36, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery', 'cod', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Flat Shipping Rate', 'flat.flat', '', '205.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:20:48', '2016-11-09 12:20:48'),
+(37, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:21:04', '2016-11-09 12:21:04'),
+(38, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:23:36', '2016-11-09 12:23:36'),
+(39, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Flat Shipping Rate', 'flat.flat', '', '205.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:25:23', '2016-11-09 12:25:23'),
+(40, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery', 'cod', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Flat Shipping Rate', 'flat.flat', '', '205.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:25:31', '2016-11-09 12:25:31'),
+(41, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:25:44', '2016-11-09 12:25:44'),
+(42, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:25:51', '2016-11-09 12:25:51'),
+(43, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:34:10', '2016-11-09 12:34:10'),
+(44, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:40:55', '2016-11-09 12:40:55'),
+(45, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:45:35', '2016-11-09 12:45:35'),
+(46, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '265.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:46:48', '2016-11-09 12:46:48'),
+(47, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '250.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:46:58', '2016-11-09 12:46:58'),
+(48, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Cash On Delivery (With Fee)', 'tst_codfee', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'X Logistics Rate', 'tst_xlogistics.tst_xlogistics', '', '265.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:47:04', '2016-11-09 12:47:04'),
+(49, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/opencart-emkan/upload/', 0, 1, 'Nermeen', 'Shoman', 'nermeenshoman@gmail.com', '009665414743205', '', '[]', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Bank Transfer', 'bank_transfer', 'Nermeen', 'Shoman', 'dasdasd', 'dadasd', '', 'dsadasd', '3123123', 'Saudi Arabia', 184, 'Ar Riyad', 2879, '', '[]', 'Flat Shipping Rate', 'flat.flat', '', '205.0000', 0, 0, '0.0000', 0, '', 1, 4, 'SAR', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'en-US,en;q=0.5', '2016-11-09 12:47:24', '2016-11-09 12:47:24');
 
 -- --------------------------------------------------------
 
@@ -2108,6 +2141,13 @@ CREATE TABLE `oc_order_history` (
   `comment` text NOT NULL,
   `date_added` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `oc_order_history`
+--
+
+INSERT INTO `oc_order_history` (`order_history_id`, `order_id`, `order_status_id`, `notify`, `comment`, `date_added`) VALUES
+(1, 21, 7, 1, 'Bank Transfer Instructions\n\nBank Transfer Instructions\n\nAn Email will be sent to you has the required information to confirm your bank transfer', '2016-11-09 09:51:22');
 
 -- --------------------------------------------------------
 
@@ -2166,7 +2206,40 @@ INSERT INTO `oc_order_product` (`order_product_id`, `order_id`, `product_id`, `n
 (14, 13, 33, 'Samsung SyncMaster 941BW', 'Product 6', 2, '200.0000', '400.0000', '0.0000', 0),
 (15, 14, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
 (16, 15, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
-(17, 16, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0);
+(17, 16, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(18, 17, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(19, 18, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(20, 19, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(21, 20, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(22, 21, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(23, 22, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(24, 23, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(25, 24, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(26, 25, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(27, 26, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(28, 27, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(29, 28, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(30, 29, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(31, 30, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(32, 31, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(33, 32, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(34, 33, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(35, 34, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(36, 35, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(37, 36, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(38, 37, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(39, 38, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(40, 39, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(41, 40, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(42, 41, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(43, 42, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(44, 43, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(45, 44, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(46, 45, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(47, 46, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(48, 47, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(49, 48, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0),
+(50, 49, 33, 'Samsung SyncMaster 941BW', 'Product 6', 1, '200.0000', '200.0000', '0.0000', 0);
 
 -- --------------------------------------------------------
 
@@ -2312,7 +2385,123 @@ INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `va
 (46, 15, 'total', 'Total', '205.0000', 9),
 (47, 16, 'sub_total', 'Sub-Total', '200.0000', 1),
 (48, 16, 'shipping', 'X Logistics Rate', '13.3300', 3),
-(49, 16, 'total', 'Total', '213.3300', 9);
+(49, 16, 'total', 'Total', '213.3300', 9),
+(50, 17, 'sub_total', 'Sub-Total', '200.0000', 1),
+(51, 17, 'shipping', 'X Logistics Rate', '13.3300', 3),
+(52, 17, 'total', 'Total', '213.3300', 9),
+(53, 18, 'sub_total', 'Sub-Total', '200.0000', 1),
+(54, 18, 'shipping', 'X Logistics Rate', '13.3300', 3),
+(55, 18, 'total', 'Total', '213.3300', 9),
+(56, 19, 'sub_total', 'Sub-Total', '200.0000', 1),
+(57, 19, 'shipping', 'X Logistics Rate', '13.3300', 3),
+(58, 19, 'total', 'Total', '213.3300', 9),
+(59, 20, 'sub_total', 'Sub-Total', '200.0000', 1),
+(60, 20, 'shipping', 'X Logistics Rate', '13.3300', 3),
+(61, 20, 'total', 'Total', '213.3300', 9),
+(62, 21, 'sub_total', 'Sub-Total', '200.0000', 1),
+(63, 21, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(64, 21, 'total', 'Total', '250.0000', 9),
+(65, 22, 'sub_total', 'Sub-Total', '200.0000', 1),
+(66, 22, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(67, 22, 'total', 'Total', '250.0000', 9),
+(68, 23, 'sub_total', 'Sub-Total', '200.0000', 1),
+(69, 23, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(70, 23, 'total', 'Total', '250.0000', 9),
+(71, 24, 'sub_total', 'Sub-Total', '200.0000', 1),
+(72, 24, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(73, 24, 'total', 'Total', '250.0000', 9),
+(74, 25, 'sub_total', 'Sub-Total', '200.0000', 1),
+(75, 25, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(76, 25, 'tst_codfee', 'Total', '200.0000', 3),
+(77, 25, 'total', 'Total', '250.0000', 9),
+(78, 26, 'sub_total', 'Sub-Total', '200.0000', 1),
+(79, 26, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(80, 26, 'tst_codfee', 'text_title_fee', '15.0000', 3),
+(81, 26, 'total', 'Total', '250.0000', 9),
+(82, 27, 'sub_total', 'Sub-Total', '200.0000', 1),
+(83, 27, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(84, 27, 'tst_codfee', 'Cash On Delivery (With Fee)', '15.0000', 3),
+(85, 27, 'total', 'Total', '250.0000', 9),
+(86, 28, 'sub_total', 'Sub-Total', '200.0000', 1),
+(87, 28, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(88, 28, 'tst_codfee', 'text_title_fee', '15.0000', 3),
+(89, 28, 'total', 'Total', '250.0000', 9),
+(90, 29, 'sub_total', 'Sub-Total', '200.0000', 1),
+(91, 29, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(92, 29, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 3),
+(93, 29, 'total', 'Total', '250.0000', 9),
+(94, 30, 'sub_total', 'Sub-Total', '200.0000', 1),
+(95, 30, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(96, 30, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 3),
+(97, 30, 'total', 'Total', '250.0000', 9),
+(98, 31, 'sub_total', 'Sub-Total', '200.0000', 1),
+(99, 31, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(100, 31, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 3),
+(101, 31, 'total', 'Total', '250.0000', 9),
+(102, 32, 'sub_total', 'Sub-Total', '200.0000', 1),
+(103, 32, 'shipping', 'Flat Shipping Rate', '5.0000', 3),
+(104, 32, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 3),
+(105, 32, 'total', 'Total', '205.0000', 9),
+(106, 33, 'sub_total', 'Sub-Total', '200.0000', 1),
+(107, 33, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(108, 33, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 3),
+(109, 33, 'total', 'Total', '250.0000', 9),
+(110, 34, 'sub_total', 'Sub-Total', '200.0000', 1),
+(111, 34, 'shipping', 'Flat Shipping Rate', '5.0000', 3),
+(112, 34, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 3),
+(113, 34, 'total', 'Total', '205.0000', 9),
+(114, 35, 'sub_total', 'Sub-Total', '200.0000', 1),
+(115, 35, 'shipping', 'Flat Shipping Rate', '5.0000', 3),
+(116, 35, 'total', 'Total', '205.0000', 9),
+(117, 36, 'sub_total', 'Sub-Total', '200.0000', 1),
+(118, 36, 'shipping', 'Flat Shipping Rate', '5.0000', 3),
+(119, 36, 'total', 'Total', '205.0000', 9),
+(120, 37, 'sub_total', 'Sub-Total', '200.0000', 1),
+(121, 37, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(122, 37, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 3),
+(123, 37, 'total', 'Total', '250.0000', 9),
+(124, 38, 'sub_total', 'Sub-Total', '200.0000', 1),
+(125, 38, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(126, 38, 'total', 'Total', '250.0000', 9),
+(127, 39, 'sub_total', 'Sub-Total', '200.0000', 1),
+(128, 39, 'shipping', 'Flat Shipping Rate', '5.0000', 3),
+(129, 39, 'total', 'Total', '205.0000', 9),
+(130, 40, 'sub_total', 'Sub-Total', '200.0000', 1),
+(131, 40, 'shipping', 'Flat Shipping Rate', '5.0000', 3),
+(132, 40, 'total', 'Total', '205.0000', 9),
+(133, 41, 'sub_total', 'Sub-Total', '200.0000', 1),
+(134, 41, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(135, 41, 'total', 'Total', '250.0000', 9),
+(136, 42, 'sub_total', 'Sub-Total', '200.0000', 1),
+(137, 42, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(138, 42, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 3),
+(139, 42, 'total', 'Total', '250.0000', 9),
+(140, 43, 'sub_total', 'Sub-Total', '200.0000', 1),
+(141, 43, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(142, 43, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 4),
+(143, 43, 'total', 'Total', '250.0000', 9),
+(144, 44, 'sub_total', 'Sub-Total', '200.0000', 1),
+(145, 44, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(146, 44, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 4),
+(147, 44, 'total', 'Total', '250.0000', 9),
+(148, 45, 'sub_total', 'Sub-Total', '200.0000', 1),
+(149, 45, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(150, 45, 'tax', 'Cash On Delivery Fees', '15.0000', 4),
+(151, 45, 'total', 'Total', '250.0000', 9),
+(152, 46, 'sub_total', 'Sub-Total', '200.0000', 1),
+(153, 46, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(154, 46, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 4),
+(155, 46, 'total', 'Total', '265.0000', 9),
+(156, 47, 'sub_total', 'Sub-Total', '200.0000', 1),
+(157, 47, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(158, 47, 'total', 'Total', '250.0000', 9),
+(159, 48, 'sub_total', 'Sub-Total', '200.0000', 1),
+(160, 48, 'shipping', 'X Logistics Rate', '50.0000', 3),
+(161, 48, 'tst_codfee', 'Cash On Delivery Fees', '15.0000', 4),
+(162, 48, 'total', 'Total', '265.0000', 9),
+(163, 49, 'sub_total', 'Sub-Total', '200.0000', 1),
+(164, 49, 'shipping', 'Flat Shipping Rate', '5.0000', 3),
+(165, 49, 'total', 'Total', '205.0000', 9);
 
 -- --------------------------------------------------------
 
@@ -3211,21 +3400,21 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (171, 0, 'dashboard_recent', 'dashboard_recent_sort_order', '8', 0),
 (172, 0, 'dashboard_activity', 'dashboard_activity_width', '4', 0),
 (173, 0, 'dashboard_recent', 'dashboard_recent_width', '8', 0),
-(194, 0, 'bank_transfer', 'bank_transfer_geo_zone_id', '0', 0),
-(195, 0, 'bank_transfer', 'bank_transfer_status', '1', 0),
-(193, 0, 'bank_transfer', 'bank_transfer_order_status_id', '7', 0),
-(192, 0, 'bank_transfer', 'bank_transfer_total', '', 0),
-(191, 0, 'bank_transfer', 'bank_transfer_bank1', 'test test ', 0),
-(196, 0, 'bank_transfer', 'bank_transfer_sort_order', '', 0),
+(299, 0, 'bank_transfer', 'bank_transfer_status', '1', 0),
+(298, 0, 'bank_transfer', 'bank_transfer_geo_zone_id', '0', 0),
+(297, 0, 'bank_transfer', 'bank_transfer_order_status_id', '7', 0),
+(296, 0, 'bank_transfer', 'bank_transfer_total', '', 0),
+(295, 0, 'bank_transfer', 'bank_transfer_bank1', 'Bank Transfer Instructions', 0),
 (234, 0, 'tst_xlogistics', 'tst_xlogistics_geo_zone_id', '6', 0),
 (233, 0, 'tst_xlogistics', 'tst_xlogistics_status', '1', 0),
 (232, 0, 'tst_xlogistics', 'tst_xlogistics_sort_order', '1', 0),
 (228, 0, 'cod', 'cod_order_status_id', '1', 0),
 (227, 0, 'cod', 'cod_total', '0.01', 0),
 (235, 0, 'tst_xlogistics', 'tst_xlogistics_tax_class_id', '9', 0),
-(236, 0, 'tst_xlogistics', 'tst_xlogistics_cost', '13.33', 0),
+(236, 0, 'tst_xlogistics', 'tst_xlogistics_cost', '50', 0),
 (293, 0, 'tst_codfee', 'tst_codfee_status', '1', 0),
-(294, 0, 'tst_codfee', 'tst_codfee_sort_order', '3', 0),
+(294, 0, 'tst_codfee', 'tst_codfee_sort_order', '4', 0),
+(300, 0, 'bank_transfer', 'bank_transfer_sort_order', '', 0),
 (292, 0, 'tst_codfee', 'tst_codfee_geo_zone_id', '6', 0),
 (291, 0, 'tst_codfee', 'tst_codfee_order_status_id', '1', 0),
 (290, 0, 'tst_codfee', 'tst_codfee_fee', '15', 0),
@@ -8805,7 +8994,7 @@ ALTER TABLE `oc_banner_image`
 -- AUTO_INCREMENT for table `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `oc_category`
 --
@@ -8905,7 +9094,7 @@ ALTER TABLE `oc_event`
 -- AUTO_INCREMENT for table `oc_extension`
 --
 ALTER TABLE `oc_extension`
-  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 --
 -- AUTO_INCREMENT for table `oc_filter`
 --
@@ -8995,7 +9184,7 @@ ALTER TABLE `oc_option_value`
 -- AUTO_INCREMENT for table `oc_order`
 --
 ALTER TABLE `oc_order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 --
 -- AUTO_INCREMENT for table `oc_order_custom_field`
 --
@@ -9005,7 +9194,7 @@ ALTER TABLE `oc_order_custom_field`
 -- AUTO_INCREMENT for table `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
-  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `oc_order_option`
 --
@@ -9015,7 +9204,7 @@ ALTER TABLE `oc_order_option`
 -- AUTO_INCREMENT for table `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
-  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 --
 -- AUTO_INCREMENT for table `oc_order_recurring`
 --
@@ -9035,7 +9224,7 @@ ALTER TABLE `oc_order_status`
 -- AUTO_INCREMENT for table `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
-  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=166;
 --
 -- AUTO_INCREMENT for table `oc_order_voucher`
 --
@@ -9115,7 +9304,7 @@ ALTER TABLE `oc_review`
 -- AUTO_INCREMENT for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
-  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=295;
+  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=301;
 --
 -- AUTO_INCREMENT for table `oc_stock_status`
 --

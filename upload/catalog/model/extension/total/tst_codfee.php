@@ -1,13 +1,17 @@
 <?php
-class ModelExtensionTotalTotal extends Model {
+class ModelExtensionTotalTstCodfee extends Model {
 	public function getTotal($total) {
-		$this->load->language('extension/total/total');
-
+            if ((isset($this->session->data['payment_method']['code'])&&$this->session->data['payment_method']['code'] == 'tst_codfee') 
+                    &&
+                (isset($this->session->data['shipping_method']['code']) && $this->session->data['shipping_method']['code'] == 'tst_xlogistics.tst_xlogistics')) {
+		$this->load->language('extension/total/tst_codfee');
 		$total['totals'][] = array(
-			'code'       => 'total',
+			'code'       => 'tst_codfee',
 			'title'      => $this->language->get('text_total'),
-			'value'      => max(0, $total['total']),
-			'sort_order' => $this->config->get('total_sort_order')
+			'value'      => $this->config->get('tst_codfee_fee'),
+			'sort_order' => $this->config->get('tst_codfee_sort_order')
 		);
+                $total['total'] += $this->config->get('tst_codfee_fee');
+            }
 	}
 }
