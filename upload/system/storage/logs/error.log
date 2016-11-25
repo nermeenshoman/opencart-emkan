@@ -55,3 +55,4 @@
 2016-11-09 12:56:13 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart-emkan\upload\system\library\mail.php on line 158
 2016-11-25 13:32:50 - PHP Notice:  Error: Could not load template C:/xampp/htdocs/opencart-emkan/upload/admin/view/template/extension/shipping/tst_xlogistics.tpl! in C:\xampp\htdocs\opencart-emkan\upload\system\library\template\php.php on line 23
 2016-11-25 13:37:20 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35
+2016-11-25 13:52:51 - PHP Notice:  Undefined variable: help_fee in C:\xampp\htdocs\opencart-emkan\upload\admin\view\template\extension\payment\tst_codfee.tpl on line 35

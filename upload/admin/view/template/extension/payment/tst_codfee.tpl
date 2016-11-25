@@ -32,7 +32,7 @@
             </div>
           </div>
             <div class="form-group">
-            <label class="col-sm-2 control-label" for="input-fee"><span data-toggle="tooltip" title="<?php echo $help_fee; ?>"><?php echo $entry_fee; ?></span></label>
+            <label class="col-sm-2 control-label" for="input-fee"><?php echo $entry_fee; ?></label>
             <div class="col-sm-10">
               <input type="text" name="tst_codfee_fee" value="<?php echo $tst_codfee_fee; ?>" placeholder="<?php echo $entry_fee; ?>" id="input-fee" class="form-control" />
             </div>
