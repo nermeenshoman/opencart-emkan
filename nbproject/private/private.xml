@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/opencart-emkan/upload/catalog/model/extension/payment/securetrading_ws.php</file>
+            <file>file:/C:/xampp/htdocs/opencart-emkan/upload/catalog/model/extension/payment/pp_payflow_iframe.php</file>
+            <file>file:/C:/xampp/htdocs/opencart-emkan/upload/admin/controller/common/forgotten.php</file>
+            <file>file:/C:/xampp/htdocs/opencart-emkan/upload/catalog/language/en-gb/extension/payment/tst_bank_transfer_email.php</file>
+            <file>file:/C:/xampp/htdocs/opencart-emkan/upload/system/library/openbay.php</file>
+            <file>file:/C:/xampp/htdocs/opencart-emkan/upload/catalog/controller/extension/payment/bank_transfer.php</file>
+            <file>file:/C:/xampp/htdocs/opencart-emkan/upload/catalog/view/theme/default/template/extension/payment/bank_transfer.tpl</file>
+            <file>file:/C:/xampp/htdocs/opencart-emkan/upload/system/library/tst_bank_transfer_mail.php</file>
+        </group>
+    </open-files>
 </project-private>
